@@ -11,4 +11,5 @@ Aso Ebi Files *[Name to be determined] aims to provide looks for the client base
   <li> Create App: I created the app using the directions on the pinterest API set up page</li>
   <li> STEP 2: Added postman redirected URI</li>
   <li> STEP 3: Use postman to get an access token </li>
+  <li> Token collected and accessed</li>
   <li> Create App from scratch </li>
