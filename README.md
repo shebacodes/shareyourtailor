@@ -9,5 +9,5 @@ Aso Ebi Files *[Name to be determined] aims to provide looks for the client base
 ## notes from pinterest
 <ol>
   <li> Create App: I created the app using the directions on the pinterest API set up page</li>
-  <li> Connect the URI, and make sure the authentication works</li>
+  <li>S STEP 2: Added postman redirected URI</li>
   <li> Create App from scratch </li>
