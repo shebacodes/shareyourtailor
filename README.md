@@ -6,3 +6,6 @@ As the wedding industry develops further in Nigeria, there will be a continous n
 Aso Ebi Files *[Name to be determined] aims to provide looks for the client based on colors, tailor and style.  
 
 # Documenting setting up the API on my account
+## notes from pinterest
+<ol>
+  <li> Create App: I created the app using the directions on the pinterest API set up page</li>
