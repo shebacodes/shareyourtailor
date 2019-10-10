@@ -12,4 +12,4 @@ Aso Ebi Files *[Name to be determined] aims to provide looks for the client base
   <li> STEP 2: Added postman redirected URI</li>
   <li> STEP 3: Use postman to get an access token </li>
   <li> Token collected and accessed</li>
-  <li> Create App from scratch </li>
+  <li> Currently having trouble testing out the API end points , using the GET request to retrieve a board </li>
