@@ -1,20 +1,12 @@
-.myButton {
-  background-color: #dfbdfa;
-  border-radius: 25px;
-  border: 1px solid #c584f3;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 19px;
-  padding: 16px 52px;
-  text-decoration: none;
-  text-shadow: 0px 0px 0px #9752cc;
+.button {
+  float: left;
+  color: solid pink;
 }
-.myButton:hover {
-  background-color: #bc80ea;
+.boxed {
+  border: 12px solid pink;
+  align-content: center;
 }
-.myButton:active {
-  position: relative;
-  top: 1px;
+.element {
+  float: center;
+  color: solid pink;
 }

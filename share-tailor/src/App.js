@@ -11,33 +11,62 @@ import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
-    // why do we make a constructor
     super(props); //mandatory in react, it calls the parent class
     this.state = {
-      userView: true
+      //I created this to store the array after rendered in the function
+      items: []
     };
+  }
+
+  //I created this function to execute the fetch method
+
+  getPins() {
+    const key =
+      "AmPocDu8RioL3HNygV5q-xya_YhfFcxEo1lZ8NdGOCxWioCugQGwwDAAABBuRjg-lyMgwE0AAAAA";
+    fetch(
+      `https://api.pinterest.com/v1/boards/bestystyles1/aso-ebi-styles/pins?access_token=${key}`,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
+      }
+    );
+    // store the data I grabbed from the function. The data should be stored in the state
+    console.log("gettingpins");
   }
 
   render() {
     return (
       <div className="App">
-        <form>
-          <div class="form-group w-75">
-            <h1>Share your tailor</h1>
-            <label for="Style "> Style</label>
-            <input type="text" class="form-control"></input>
-          </div>
-          <div class="form-group w-75">
-            <label for="color"> Color</label>
-            <input type="text" class="form-control"></input>
-          </div>
-          <div class="form-group">
-            <button type="button" class="btn btn-primary btn-lg">
-              {" "}
-              Get My Tailor
-            </button>
-          </div>
-        </form>
+        <div class="boxed">
+          <form>
+            <form class="text-center">
+              <div class="form-group w-75">
+                <h1>Share your tailor</h1>
+                <label for="Style "> Style</label>
+                <input type="text" class="form-control"></input>
+              </div>
+              <div class="row d-flex justify-content-center"></div>
+              <div class="form-group w-75">
+                <label for="color"> Color</label>
+                <input type="text" class="form-control"></input>
+              </div>
+              <div class="form-group">
+                <button
+                  type="button"
+                  class="btn btn-primary content-center btn-lg"
+                  color="pink"
+                  onClick={() => this.getPins()}
+                >
+                  {" "}
+                  Get My Style
+                </button>
+              </div>
+            </form>
+          </form>
+        </div>
       </div>
     );
   }
