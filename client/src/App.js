@@ -1,27 +1,36 @@
 import React from "react";
-import logo from "./logo.svg";
-import adminView from "./components/adminView.js";
 import "./App.css";
-import axios from "axios";
 // export sends the information, and import grabs it so its ready to use.
 
 //this means that the class is the template for an object. Making the template called app.
 // they have properties and behaviors, in this case, state and objects
 //extends means inheritance , importing and inheriting from react component
 
+const API = "/api";
+
 class App extends React.Component {
   constructor(props) {
     super(props); //mandatory in react, it calls the parent class
     this.state = {
-      //I created this to store the array after rendered in the function
-      items: []
+      pins: []
     };
   }
 
   //I created this function to execute the fetch method
 
   getPins() {
-    fetch("/api");
+    fetch("/api")
+      .then(response => response.json())
+      .then(json =>
+        this.setState({
+          isLoaded: true,
+          pins: json
+        })
+      );
+
+    //use then to create a function that stores the data in set.state
+    // refer to the set state in this.state
+    // render the data to the single page application
   }
 
   render() {
