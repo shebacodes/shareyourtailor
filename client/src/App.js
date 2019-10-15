@@ -35,13 +35,15 @@ class App extends React.Component {
 
   render() {
     const API = "/api";
-    //const data = this.state.pins.data.url;
+    const pins = this.state.pins.map(pinData => (
+      <img src={pinData.image.original.url}></img>
+    ));
     return (
       <div className="App">
         <div className="boxed">
           <form className="text-center">
             <div className="form-group w-75">
-              <h1>Share your tailor</h1>
+              <h1>SHARE YOUR TAILOR</h1>
               <label htmlFor="Style "> Style</label>
               <input type="text" className="form-control"></input>
             </div>
@@ -50,7 +52,7 @@ class App extends React.Component {
               <label htmlFor="color"> Color</label>
               <input type="text" className="form-control"></input>
             </div>
-            <div className="form-group">
+            <div className="form-group w-75">
               <button
                 type="button"
                 className="btn btn-primary content-center btn-lg"
@@ -58,9 +60,9 @@ class App extends React.Component {
                 onClick={() => this.getPins()}
               >
                 {" "}
-                Get My Style
+                GET MY STYLE
               </button>
-              <div></div>
+              <div>{pins}</div>
             </div>
           </form>
         </div>
