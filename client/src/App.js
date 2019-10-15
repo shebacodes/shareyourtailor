@@ -6,34 +6,35 @@ import "./App.css";
 // they have properties and behaviors, in this case, state and objects
 //extends means inheritance , importing and inheriting from react component
 
-const API = "/api";
-
 class App extends React.Component {
   constructor(props) {
     super(props); //mandatory in react, it calls the parent class
     this.state = {
-      pins: []
+      loading: false,
+      pins: [], // initialized to an empty array, map method to render
+      error: false
     };
   }
 
   //I created this function to execute the fetch method
-
   getPins() {
     fetch("/api")
       .then(response => response.json())
       .then(json =>
         this.setState({
           isLoaded: true,
-          pins: json
+          pins: json.data
         })
       );
 
+    //function created to handle input
     //use then to create a function that stores the data in set.state
     // refer to the set state in this.state
     // render the data to the single page application
   }
 
   render() {
+    const API = "/api";
     return (
       <div className="App">
         <div className="boxed">
