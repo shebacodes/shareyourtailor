@@ -20,10 +20,10 @@ class App extends React.Component {
   getPins() {
     fetch("/api")
       .then(response => response.json())
-      .then(json =>
+      .then(response =>
         this.setState({
           isLoaded: true,
-          pins: json.data
+          pins: response.data // .data, because we need the data from the json object
         })
       );
 
@@ -35,6 +35,7 @@ class App extends React.Component {
 
   render() {
     const API = "/api";
+    //const data = this.state.pins.data.url;
     return (
       <div className="App">
         <div className="boxed">
@@ -59,6 +60,7 @@ class App extends React.Component {
                 {" "}
                 Get My Style
               </button>
+              <div></div>
             </div>
           </form>
         </div>
