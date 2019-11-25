@@ -19,10 +19,10 @@ class App extends React.Component {
   //I created this function to execute the fetch method
   getPins() {
     fetch("/api")
-      .then(response => response.json())
+      .then(response => response.json()) //this converts the response to a JSON file
       .then(response =>
         this.setState({
-          isLoaded: true,
+          isLoaded: true, // still don't understand what isloaded means
           pins: response.data // .data, because we need the data from the json object
         })
       );
@@ -43,7 +43,7 @@ class App extends React.Component {
         <div className="boxed">
           <form className="text-center">
             <div className="form-group w-75">
-              <h1>SHARE YOUR TAILOR</h1>
+              <h1>ASO EBI STYLE</h1>
               <label htmlFor="Style "> Style</label>
               <input type="text" className="form-control"></input>
             </div>
@@ -60,7 +60,7 @@ class App extends React.Component {
                 onClick={() => this.getPins()}
               >
                 {" "}
-                GET MY STYLE
+                GET MY TAILOR
               </button>
               <div>{pins}</div>
             </div>
