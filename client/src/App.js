@@ -43,7 +43,7 @@ class App extends React.Component {
         <div className="boxed">
           <form className="text-center">
             <div className="form-group w-75">
-              <h1>ASO EBI STYLE</h1>
+              <h1>ASO EBI STYLES</h1>
               <label htmlFor="Style "> Style</label>
               <input type="text" className="form-control"></input>
             </div>
