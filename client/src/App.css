@@ -1,10 +1,10 @@
-.button {
-  float: left;
-  color: pink;
-  padding: 20px;
-  text-align: center;
-  border-radius: 12px solid red;
-  margin: 4px 2px;
+button {
+  height: 50px;
+  width: 200px;
+  margin: 12px 2px;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
 
 body {

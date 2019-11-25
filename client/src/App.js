@@ -52,7 +52,7 @@ class App extends React.Component {
           </div>
           <div className="form-group w-75">
             <button
-              type="button1"
+              type="stylebutton"
               className="btn btn-primary content-center btn-lg"
               class="12px"
               onClick={() => this.getPins()}
