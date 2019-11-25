@@ -40,30 +40,29 @@ class App extends React.Component {
     ));
     return (
       <div className="App">
-        <div className="container">
-          <form className="text-center">
-            <div className="form-group w-75">
-              <label htmlFor="Style "> Style</label>
-              <input type="text" className="form-control"></input>
-            </div>
-            <div className="row d-flex justify-content-center"></div>
-            <div className="form-group w-75">
-              <label htmlFor="color"> Color</label>
-              <input type="text" className="form-control"></input>
-            </div>
-            <div className="form-group w-75">
-              <button
-                type="button1"
-                className="btn btn-primary content-center btn-lg"
-                class="12px"
-                onClick={() => this.getPins()}
-              >
-                Get Style
-              </button>
-              <div>{pins}</div>
-            </div>
-          </form>
-        </div>
+        <form className="text-left">
+          <div className="form-group w-75">
+            <label htmlFor="Style ">Style</label>
+            <input type="text" className="form-control"></input>
+          </div>
+          <div className="row d-flex justify-content-center"></div>
+          <div className="form-group w-75">
+            <label htmlFor="color"> Color</label>
+            <input type="text" className="form-control"></input>
+          </div>
+          <div className="form-group w-75">
+            <button
+              type="button1"
+              className="btn btn-primary content-center btn-lg"
+              class="12px"
+              onClick={() => this.getPins()}
+            >
+              {" "}
+              Get Style
+            </button>
+            <div>{pins}</div>
+          </div>
+        </form>
       </div>
     );
   }
