@@ -43,7 +43,6 @@ class App extends React.Component {
         <div className="boxed">
           <form className="text-center">
             <div className="form-group w-75">
-              <h1>ASO EBI STYLES</h1>
               <label htmlFor="Style "> Style</label>
               <input type="text" className="form-control"></input>
             </div>
@@ -54,12 +53,11 @@ class App extends React.Component {
             </div>
             <div className="form-group w-75">
               <button
-                type="button"
+                type="button1"
                 className="btn btn-primary content-center btn-lg"
-                color="pink"
+                class="12px"
                 onClick={() => this.getPins()}
               >
-                {" "}
                 GET MY TAILOR
               </button>
               <div>{pins}</div>
