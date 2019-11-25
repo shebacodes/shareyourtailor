@@ -1,4 +1,4 @@
-.button1 {
+.button {
   float: left;
   color: pink;
   padding: 20px;
@@ -6,10 +6,16 @@
   border-radius: 12px;
 }
 .boxed {
-  border: 12px solid pink;
   align-content: center;
 }
-.element {
-  float: center;
-  color: solid pink;
+.container {
+  margin-right: auto;
+  color: black;
+}
+
+body {
+  font-family: "source sans pro", sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 24px;
 }

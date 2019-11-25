@@ -40,7 +40,7 @@ class App extends React.Component {
     ));
     return (
       <div className="App">
-        <div className="boxed">
+        <div className="container">
           <form className="text-center">
             <div className="form-group w-75">
               <label htmlFor="Style "> Style</label>
@@ -58,7 +58,7 @@ class App extends React.Component {
                 class="12px"
                 onClick={() => this.getPins()}
               >
-                GET MY TAILOR
+                Get Style
               </button>
               <div>{pins}</div>
             </div>
