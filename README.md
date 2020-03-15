@@ -1,7 +1,7 @@
 # ASO EBI STYLE
 
 ## WHAT IS ASO EBI STYLE?
-Aso Ebi is a Nigerian [insert description here] garment worn in varied designs to celebrate special occasions, primarily weddings, birthday celebrations and engagement parties.
+Aso Ebi is a Nigerian garment worn in varied designs to celebrate special occasions, primarily weddings, birthday celebrations and engagement parties.
 
 ### THE PROBLEM
 As the wedding industry develops further in Nigeria, there will be a continous need to source the services of tailors who can "build the look" for customers interested in mocking up styles they've seen from friends and family. My app "Share Your Tailor" runs on the common slang amongst Nigerians who have a hard time sharing their tailors for fear of having them on a backlog.
