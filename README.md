@@ -1,6 +1,6 @@
-# ASO EBI STYLE
+# SHARE YOUT TAILOR
 
-## WHAT IS ASO EBI STYLE?
+## WHAT IS SHARE YOUR TAILOR?
 Aso Ebi is a Nigerian garment worn in varied designs to celebrate special occasions, primarily weddings, birthday celebrations and engagement parties.
 
 ### THE PROBLEM
